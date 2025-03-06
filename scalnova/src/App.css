@@ -17,35 +17,30 @@ body {
   color: var(--text-light);
   font-family: 'DM Sans', sans-serif;
 }
-/* Mobiles */
-.navbar {
+.app {
+  display: flex;
   flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
+  min-height: 100vh;
 }
 
-.nav-left, .nav-right {
-  flex-direction: column;
-  gap: 1rem;
-  text-align: center;
-}
+/* Default Mobile Order: Navbar -> Hero -> WhatWeDo -> Footer */
 
-/* Tablet/Laptop (768px+) */
+/* Desktop Reorder (768px+) */
 @media (min-width: 768px) {
   .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1.5rem 5%;
+    order: 2; /* Moves Navbar below Hero */
+  }
+  
+  .hero {
+    order: 1; /* Moves Hero to the top */
   }
 
-  .nav-left, .nav-right {
-    flex-direction: row;
+  /* Keep other sections in original order */
+  .what-we-do {
+    order: 3;
   }
-}
 
-/* Desktop (1024px+) */
-@media (min-width: 1024px) {
-  .hero h1 {
-    font-size: 3.5rem;
+  footer {
+    order: 4;
   }
 }

@@ -1,31 +1,82 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 5%;
-    background-color: var(--dark-violet);
-    border-bottom: 1px solid var(--medium-violet);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+  background-color: var(--dark-violet);
+  border-bottom: 1px solid var(--medium-violet);
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  gap: 2rem;
+}
+
+.logo {
+  font-family: 'DM Serif Display', serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+.navbar a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: var(--accent-violet);
+}
+
+/* ======== Responsive Additions ======== */
+/* Mobile Menu Button (Hidden on Desktop) */
+.menu-toggle {
+  display: none; /* Hidden by default */
+  background: none;
+  border: none;
+  color: var(--text-light);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
   }
-  
+
   .nav-left, .nav-right {
-    display: flex;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    display: none; /* Hidden by default on mobile */
   }
-  
+
+  .nav-links.active {
+    display: flex !important;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .menu-toggle {
+    display: block; /* Show hamburger icon */
+    align-self: flex-end;
+  }
+
   .logo {
-    font-family: 'DM Serif Display', serif;
-    font-size: 22px;
-    font-weight: 600;
-    color: var(--text-light);
+    order: -1; /* Move logo to top */
   }
-  
-  .navbar a {
-    color: var(--text-light);
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s ease;
+}
+
+/* Desktop Styles (768px+) */
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
   }
-  
-  .navbar a:hover {
-    color: var(--accent-violet);
-  }
+}
