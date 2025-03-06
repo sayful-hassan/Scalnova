@@ -1,0 +1,26 @@
+.what-we-do {
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .what-we-do h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .what-we-do ul {
+    list-style: none;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .what-we-do li {
+    padding: 1rem 2rem;
+    background-color: var(--medium-violet);
+    border-radius: 8px;
+  }
