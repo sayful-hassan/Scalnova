@@ -17,3 +17,35 @@ body {
   color: var(--text-light);
   font-family: 'DM Sans', sans-serif;
 }
+/* Mobiles */
+.navbar {
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.nav-left, .nav-right {
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+/* Tablet/Laptop (768px+) */
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem 5%;
+  }
+
+  .nav-left, .nav-right {
+    flex-direction: row;
+  }
+}
+
+/* Desktop (1024px+) */
+@media (min-width: 1024px) {
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+}

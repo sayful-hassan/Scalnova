@@ -1,21 +1,24 @@
-import React from 'react';
-import './NavBar.css';
+import { useState } from 'react';
+import './Navbar.css';
 
-export default function NavBar() {
+export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav className="navbar">
-      <div className="nav-left">
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/services">Services</a>
-      </div>
-      
-      <div className="logo">SCALNOVA</div>
-      
-      <div className="nav-right">
-        <a href="/works">Our works</a>
-        <a href="/careers">Careers</a>
-        <a href="/contact">Contact</a>
+      {/* Mobile Menu Button */}
+      <button 
+        className="menu-toggle"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        ☰
+      </button>
+
+      {/* Navigation Links */}
+      <div className={`nav-links ${isOpen ? 'active' : ''}`}>
+        <div className="nav-left">...</div>
+        <div className="logo">SCALNOVA</div>
+        <div className="nav-right">...</div>
       </div>
     </nav>
   )
