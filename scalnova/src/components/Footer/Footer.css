@@ -1,0 +1,13 @@
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--medium-violet);
+    margin-top: auto;
+  }
+  
+  .app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
