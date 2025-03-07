@@ -1,8 +1,9 @@
 .what-we-do {
     padding: 4rem 2rem;
-    max-width: 800px;
+    max-width: 100vw;
     margin: 0 auto;
     text-align: center;
+
   }
   
   .what-we-do h2 {
@@ -15,15 +16,22 @@
     list-style: none;
     margin-top: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    padding: 0 1.5rem;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 22px 1.5rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 1200px; 
+      margin: 0 auto;
+      gap: 2rem;
+    }
   }
   
   .what-we-do li {
-    padding: 2rem;
-    border-radius: 16px;
-    background: rgba(78, 42, 115, 0.15);
+   padding: 2rem;
+   border-radius: 16px;
+   background: rgba(78, 42, 115, 0.15);
    backdrop-filter: blur(10px);
    -webkit-backdrop-filter: blur(10px);
    border: 1px solid rgba(255, 255, 255, 0.1);
@@ -34,6 +42,8 @@
    flex-direction: column;
    justify-content: center;
    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+   max-width: 380px; 
+   margin: 0 auto; 
   }
 
   .what-we-do li:hover {
