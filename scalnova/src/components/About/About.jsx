@@ -28,7 +28,7 @@ export default function About() {
           <h2>Meet Our Team</h2>
           <p className="team-intro">Our team consists of freshers learning from experts, ensuring continuous growth and innovation.</p>
           <div className="team-grid">
-            {['Designers Team', 'Development Team', 'Marketing Team', 'Support Team'].map((team) => (
+            {['Designers Team', 'Development Team', 'Marketing Team', 'Support Team' , 'HR & Management'].map((team) => (
               <div key={team} className="team-card glass-card">
                 <h3>{team}</h3>
                 <p>Collaborative team of specialists working seamlessly to deliver excellence</p>
