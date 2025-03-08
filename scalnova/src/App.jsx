@@ -3,15 +3,21 @@ import Footer from './components/Footer/Footer'
 import Hero from './components/Hero/Hero'
 import NavBar from './components/Navbar/NavBar'
 import WhatWeDo from './components/WhatWeDo/WhatWeDo'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import About from './components/About/About';
 
 function App() {
   return (
-    <div className="app">
+    <Router>
+     <div className="app">
       <NavBar/>
-      <Hero />
-      <WhatWeDo />
+       <Routes>
+       <Route path="/" element={<><Hero /><WhatWeDo /></>} />
+       <Route path="/about" element={<About />} />
+      </Routes>
       <Footer />
-    </div>
+     </div>
+    </Router>
   )
 }
 
