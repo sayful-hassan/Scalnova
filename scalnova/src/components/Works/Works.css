@@ -1,0 +1,216 @@
+.works-page {
+    padding-top: var(--navbar-height);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #1E102E, #2E1A47);
+    left: 0;
+    right: 0;
+    width: 100vw;
+  }
+  
+  .works-main {
+    flex: 1;
+    padding: 4rem 0;
+  }
+  
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  /* Hero Section */
+  .works-hero {
+    text-align: center;
+    padding: 6rem 0 4rem;
+  }
+  
+  .works-hero h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-subtext {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+  
+  /* Case Studies */
+  .case-studies-grid {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr;
+    margin: 4rem 0;
+  }
+  
+  .case-study-card {
+    padding: 3rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .case-study-card h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--accent-violet);
+  }
+  
+  .case-study-content {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: 1fr;
+  }
+  
+  .case-study-section {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+  }
+  
+  .case-study-section h4 {
+    font-family: 'DM Serif Display', serif;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+  
+  .tech-tag {
+    background: rgba(126, 90, 155, 0.2);
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+  }
+  
+  .testimonial {
+    font-style: italic;
+    padding: 2rem;
+    margin: 2rem 0 0;
+    border-left: 3px solid var(--accent-violet);
+    background: rgba(255, 255, 255, 0.05);
+  }
+  
+  /* Featured Projects */
+  .projects-grid {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 4rem 0;
+  }
+  
+  .project-card {
+    padding: 2.5rem;
+    text-align: center;
+  }
+  
+  .project-card h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .category {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background: var(--medium-violet);
+    border-radius: 25px;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Testimonials */
+  .testimonials-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin: 4rem 0;
+  }
+  
+  .testimonial-card {
+    padding: 2.5rem;
+    position: relative;
+  }
+  
+  .testimonial-card::before {
+    content: "“";
+    position: absolute;
+    top: -1rem;
+    left: 1rem;
+    font-size: 5rem;
+    color: var(--accent-violet);
+    opacity: 0.3;
+    font-family: 'DM Serif Display', serif;
+  }
+  
+  blockquote {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 1rem 0;
+  }
+  
+  cite {
+    display: block;
+    margin-top: 1.5rem;
+    font-style: normal;
+    color: var(--text-secondary);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .works-hero h1 {
+      font-size: 2.8rem;
+    }
+    
+    .case-study-card {
+      padding: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .works-hero {
+      padding: 4rem 0;
+    }
+    
+    .case-study-content {
+      grid-template-columns: 1fr;
+    }
+    
+    .testimonial-card::before {
+      top: -0.5rem;
+      font-size: 4rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 0 1rem;
+    }
+    
+    .works-hero h1 {
+      font-size: 2.2rem;
+    }
+    
+    .case-study-card {
+      padding: 1.5rem;
+    }
+    
+    .tech-tag {
+      font-size: 0.8rem;
+    }
+  }
