@@ -3,6 +3,8 @@ footer {
     padding: 2rem;
     background-color: var(--medium-violet);
     margin-top: auto;
+    left: 0;
+    right: 0;
   }
   
   .app {
