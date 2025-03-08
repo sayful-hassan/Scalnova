@@ -5,6 +5,10 @@
   padding: 1.5rem 5%;
   background-color: var(--dark-violet);
   border-bottom: 1px solid var(--medium-violet);
+  position:fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .nav-left, .nav-right {
