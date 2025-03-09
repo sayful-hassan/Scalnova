@@ -11,6 +11,7 @@
   .services-main {
     flex: 1;
     padding: 4rem 0;
+    text-align: center;
   }
   
   .services-intro {
