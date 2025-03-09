@@ -1,6 +1,7 @@
 /* About Page Container */
 .about-page {
     padding-top: var(--navbar-height);
+    width: 100vw;
   }
   
   /* Content Sections */
