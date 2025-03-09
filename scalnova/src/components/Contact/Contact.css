@@ -1,0 +1,145 @@
+.contact-page {
+    padding-top: var(--navbar-height);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    left: 0;
+    right: 0;
+  }
+  
+  .contact-main {
+    flex: 1;
+    padding: 4rem 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .contact-heading {
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+  
+  /* Form Styles */
+  .form-section h2,
+  .location-section h2,
+  .social-section h2 {
+    text-align: center;
+    margin: 4rem 0 2rem;
+    font-family: 'DM Serif Display', serif;
+  }
+  
+  .contact-form {
+    padding: 2.5rem;
+    border-radius: 12px;
+    background: rgba(78, 42, 115, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--medium-violet);
+    border-radius: 6px;
+    color: var(--text-light);
+    font-family: 'DM Sans', sans-serif;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background: var(--accent-violet);
+    color: var(--text-light);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background: #6d4b8a;
+  }
+  
+  /* Location Section */
+  .map-container {
+    height: 400px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .map-placeholder {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-secondary);
+  }
+  
+  /* Social Section */
+  .social-description {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .social-link {
+    color: var(--text-light);
+    font-size: 2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-link:hover {
+    color: var(--accent-violet);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-heading {
+      font-size: 2.5rem;
+    }
+    
+    .contact-form {
+      padding: 1.5rem;
+    }
+    
+    .map-container {
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-heading {
+      font-size: 2rem;
+    }
+    
+    .social-icons {
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+  }

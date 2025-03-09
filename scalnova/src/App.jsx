@@ -7,7 +7,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './components/About/About';
 import Services from './components/Services/Services';
 import Works from './components/Works/Works';
-import Careers from './components/Careers/Careers'
+import Careers from './components/Careers/Careers';
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
        <Route path="/services" element={<Services />} />
        <Route path="/works" element={<Works />} />
        <Route path="/careers" element={<Careers />} />
+       <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
      </div>
