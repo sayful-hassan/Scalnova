@@ -4,9 +4,9 @@
     display: flex;
     flex-direction: column;
     background: linear-gradient(to bottom, #1E102E, #2E1A47);
+    width: 100vw;
     left: 0;
     right: 0;
-    width: 100vw;
   }
   
   .works-main {

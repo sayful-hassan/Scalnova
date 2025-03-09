@@ -1,0 +1,159 @@
+.careers-page {
+    padding-top: var(--navbar-height);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    width: 100vw;
+  }
+  
+  .careers-main {
+    flex: 1;
+    padding: 4rem 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  /* Hero Section */
+  .careers-hero {
+    text-align: center;
+    padding: 6rem 0 4rem;
+  }
+  
+  .careers-hero h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-subtext {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+  
+  /* Job Openings */
+  .jobs-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 3rem 0;
+  }
+  
+  .job-card {
+    padding: 2rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .job-card h3 {
+    font-family: 'DM Serif Display', serif;
+    color: var(--accent-violet);
+    margin-bottom: 1rem;
+  }
+  
+  .job-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .job-type, .job-location {
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .job-type {
+    background: rgba(126, 90, 155, 0.2);
+  }
+  
+  .job-location {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Work Culture */
+  .culture-card {
+    padding: 3rem;
+    margin: 4rem 0;
+    text-align: center;
+  }
+  
+  .culture-description {
+    max-width: 800px;
+    margin: 2rem auto 0;
+    line-height: 1.8;
+  }
+  
+  /* Benefits */
+  .benefits-section {
+    margin: 4rem 0;
+  }
+  
+  .benefits-list {
+    columns: 2;
+    gap: 2rem;
+    margin: 2rem 0;
+    padding-left: 0;
+  }
+  
+  .benefit-item {
+    color: var(--text-secondary);
+    padding: 0.8rem 0;
+    font-size: 1.1rem;
+    list-style: none;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .benefit-item::before {
+    content: "•";
+    color: var(--accent-violet);
+    position: absolute;
+    left: 0;
+  }
+  
+  /* Internships */
+  .internship-card {
+    padding: 3rem;
+    margin: 4rem 0;
+    text-align: center;
+  }
+  
+  .internship-description {
+    max-width: 800px;
+    margin: 1.5rem auto 0;
+    line-height: 1.8;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .careers-hero {
+      padding: 4rem 0;
+    }
+    
+    .benefits-list {
+      columns: 1;
+    }
+    
+    .culture-card,
+    .internship-card {
+      padding: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .careers-hero h1 {
+      font-size: 2.2rem;
+    }
+    
+    .job-meta {
+      flex-direction: column;
+    }
+  }

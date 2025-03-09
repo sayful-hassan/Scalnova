@@ -1,6 +1,5 @@
 import React from 'react';
 import './Works.css';
-import SectionHeader from '../UI/SectionHeader';
 
 const caseStudies = [
   {
@@ -62,10 +61,10 @@ export default function Works() {
 
           {/* Case Studies */}
           <section className="case-studies">
-            <SectionHeader 
+            <div>
               title="Case Studies" 
               subtitle="Detailed explorations of our problem-solving process" 
-            />
+            </div>
             
             <div className="case-studies-grid">
               {caseStudies.map((study, index) => (
@@ -103,10 +102,10 @@ export default function Works() {
 
           {/* Featured Projects */}
           <section className="featured-projects">
-            <SectionHeader
+            <div>
               title="Featured Work"
               subtitle="Highlighted projects showcasing our expertise"
-            />
+            </div>
             <div className="projects-grid">
               {featuredProjects.map((project, index) => (
                 <div key={index} className="glass-card project-card">
@@ -120,10 +119,12 @@ export default function Works() {
 
           {/* Testimonials */}
           <section className="testimonials">
-            <SectionHeader
+                
+            <div>
               title="Client Voices"
               subtitle="What our partners say about working with us"
-            />
+            </div>
+            
             <div className="testimonials-grid">
               {testimonials.map((testimonial, index) => (
                 <div key={index} className="glass-card testimonial-card">
