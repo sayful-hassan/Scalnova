@@ -61,9 +61,9 @@ export default function Works() {
 
           {/* Case Studies */}
           <section className="case-studies">
-            <div>
-              title="Case Studies" 
-              subtitle="Detailed explorations of our problem-solving process" 
+            <div className='cases'>
+              <h2>Case Studies</h2> 
+              <p>Detailed explorations of our problem-solving process</p> 
             </div>
             
             <div className="case-studies-grid">
@@ -102,9 +102,9 @@ export default function Works() {
 
           {/* Featured Projects */}
           <section className="featured-projects">
-            <div>
-              title="Featured Work"
-              subtitle="Highlighted projects showcasing our expertise"
+            <div className='cases'>
+              <h2>Featured Work</h2>
+              <p>Highlighted projects showcasing our expertise</p>
             </div>
             <div className="projects-grid">
               {featuredProjects.map((project, index) => (
@@ -120,9 +120,9 @@ export default function Works() {
           {/* Testimonials */}
           <section className="testimonials">
                 
-            <div>
-              title="Client Voices"
-              subtitle="What our partners say about working with us"
+            <div className='cases'>
+              <h2>Client Voices</h2>
+              <p>What our partners say about working with us</p>
             </div>
             
             <div className="testimonials-grid">
